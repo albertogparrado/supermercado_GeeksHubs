@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alberto G. Parrado">
+    <title>Super Mercado Virtual</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--CSS CUSTOM-->
+    <link href="CSS/style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <!--MENÚ PRINCIPAL-->
+    <div class="container">
+        <div class="row">   
+            <nav>
+                    <ul class="menu">
+                        <li><img src="IMG/amazon.png" id="amazon"></li>
+                        <li><a href="index.html" class="textmenu">HOME</a></li>
+                       <!--P <li><a href="carrito.html"id="textmenu">Carrito</a></li> -->
+                        <li id="totalcesta"> 
+                            <p>Total a pagar:
+                            <var id="total">0</var> € </p>  <!--Precio modifica cesta-->
+                        </li>
+                        <button>
+                            <p id="borrar" class="borrar">Borrar carrito</p>
+                        </button>
+                    </ul>
+            </nav>
+        </div>
+    </div>    
+    
+    <!--TÍTULO PRODUCTOS-->
+    <div class="container" id="titulosec1"> <h1>Frutas</h1></div>
+       
+    <!--Fila 1-->
+    <div class="container" id="tienda">
+        <div class="row">
+            <div class="col" id="producto" value="4"> 
+                <div class="col"  id="fresa" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/fresas.png"
+                    <br>
+                    <p id="tituloprod">Fresas</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p>4€</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col" id="producto" value="3"> 
+                <div class="col" id="unidproduct" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/naranja.png"
+                    <br>
+                    <p id="tituloprod">Naranjas</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p>3€</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col" id="producto" value="3"> 
+                <div class="col" id="unidproduct" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/platanos.png"
+                    <br>
+                    <p id="tituloprod">Platanos</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p>3</var>
+ €</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col" id="producto"> 
+                <div class="col" id="unidproduct" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/kiwi.jpeg"
+                    <br>
+                    <p id="tituloprod">Kiwi</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p><var id="precio">5</var>
+                            €</p>
+                        </div>
+                </div>
+            </div>
+        </div>   
+     </div>
+    
+
+
+<!--TÍTULO PRODUCTOS-->
+    <div class="container" id="titulosec2"> <h1>Verduras</h1></div>
+       
+    <!--Fila 2-->
+    <div class="container" id="tienda">
+        <div class="row">
+            <div class="col" id="producto" value="4"> 
+                <div class="col"  id="berenjenas" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/Berenjenas Japonesas.png"
+                    <br>
+                    <p id="tituloprod">Berenjenas Japonesas</p>
+                    <br>
+                        <div id="boxprice">
+                            <p>4€</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col" id="producto" value="3"> 
+                <div class="col" id="unidproduct" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/naranja.png"
+                    <br>
+                    <p id="tituloprod">Naranjas</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p>3€</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col" id="producto" value="3"> 
+                <div class="col" id="unidproduct" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/platanos.png"
+                    <br>
+                    <p id="tituloprod">Platanos</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p><var id="precio">3</var>
+                            €</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col" id="producto"> 
+                <div class="col" id="unidproduct" draggable="true" ondragstart="drag(event)">
+                    <img src="IMG/kiwi.jpeg"
+                    <br>
+                    <p id="tituloprod">Kiwi</p>
+                    <br>
+                        <div id="boxprice">
+                            <p></p><var id="precio">5</var>
+                            €</p>
+                        </div>
+                </div>
+            </div>
+        </div>   
+     </div>
+    
+  
+
+<div class="container">
+        <div class="col">  
+            <div id="cesta" class="filter" ondrop="drop(event)" ondragover="allowDrop(event)"> Arrastra aquí tus productos</div>
+        </div>
+        
+</div>
+<div class="container">
+        <div class="row" id="alineador">  
+            
+        </div>
+</div>
+    
+
+
+
+    <!--BOOTSTRAP JAVASCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     <!--JAVASCRIPT-->
+    <script src="JS/main.js"></script>
+</body>
+<footer>
+ <p>Realizado por <a href="https://github.com/albertogparrado/"> Alberto García </a></p> 
+</footer>
+</html>
